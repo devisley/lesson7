@@ -1,0 +1,45 @@
+/*
+ * Created by Artyom Manchenkov
+ * Copyright © 2015-2018 [DeepSide Interactive]
+ */
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+#navbarNav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.product-box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-box__item {
+    width: 300px;
+    margin-top: 30px;
+}
+
+.btn-link {
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 3px;
+    padding: 10px;
+    color: #000;
+    background-color: limegreen;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn-link:hover {
+    text-decoration: none;background-color: lime; color: #000;
+}

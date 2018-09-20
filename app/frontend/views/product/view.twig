@@ -1,0 +1,6 @@
+<h1>{{ product.name |capitalize}}</h1>
+<h2>Category: {{ category.name |capitalize}}</h2>
+<i>Price: {{ product.price }}</i>
+<p>{{ product.description |capitalize }}</p>
+<a href="/cart/add?id={{ product.id }}" class="btn-link">Добавить в корзину</a>
+<hr>

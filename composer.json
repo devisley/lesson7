@@ -1,0 +1,16 @@
+{
+  "name": "manchenkov/framework",
+  "description": "GeekBrains MVC app template",
+  "type": "project",
+  "require": {
+    "php": ">=7.1",
+    "twig/twig": "^2.4"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Artyom Manchenkov",
+      "email": "artyom@manchenkoff.me"
+    }
+  ]
+}

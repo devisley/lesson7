@@ -1,0 +1,11 @@
+<div class="product-box">
+    {% for product in products %}
+        <article class="product-box__item">
+            <h2>{{ product.name }}</h2>
+            <p>{{ product.description }}</p>
+            <b>{{ product.price }}</b><br>
+            <a href="/product/view?id={{ product.id }}" class="btn-link">View product</a>
+        </article>
+    {% endfor %}
+</div>
+

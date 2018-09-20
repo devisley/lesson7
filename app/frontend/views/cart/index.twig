@@ -1,0 +1,17 @@
+<h1>Cart</h1>
+
+{% if cart %}
+    <b>Quantity: {{ cart | length }}</b>
+    <ul>
+        {% for cartItem in cart %}
+            <li>
+                <a href="/product/view?id={{ cartItem.id }}">{{ cartItem.name }}</a><br>
+                <small>Price: {{ cartItem.price }}</small>
+            </li>
+        {% endfor %}
+    </ul>
+    <h3>Total: {{ price }} rub</h3>
+    <a href="/order/create" class="btn-link">CREATE ORDER</a>
+{% else %}
+    <p>Корзина пуста.</p>
+{% endif %}
