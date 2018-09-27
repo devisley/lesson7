@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="FormatterTest" file="/Users/manchenkov/Develop/framework/system/tests/FormatterTest.php" tests="1" assertions="1" errors="0" failures="1" skipped="0" time="0.049936">
+    <testcase name="testFromRoute" class="FormatterTest" classname="FormatterTest" file="/Users/manchenkov/Develop/framework/system/tests/FormatterTest.php" line="11" assertions="1" time="0.049936">
+      <failure type="PHPUnit\Framework\ExpectationFailedException">FormatterTest::testFromRoute
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'Testname'
++'Test*Name'
+
+/Users/manchenkov/Develop/framework/system/tests/FormatterTest.php:14
+</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
