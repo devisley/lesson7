@@ -2,7 +2,7 @@
 
 namespace system\components;
 
-abstract class Model {
+abstract class Model extends BaseObject {
 
     /**
      * Model constructor

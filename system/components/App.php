@@ -76,7 +76,7 @@ class App extends BaseObject {
         $database = $settings['database'];
 
         try {
-            $dbh = new \PDO("mysql:host={$host};dbname={$database};port=3307", $user, $password);
+            $dbh = new \PDO("mysql:host={$host};dbname={$database};port=3306", $user, $password);
             return $dbh;
         } catch (\PDOException $error) {
             echo $error->getMessage();

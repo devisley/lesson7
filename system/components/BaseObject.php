@@ -47,7 +47,8 @@ abstract class BaseObject {
                 die();
             }
         } else {
-            return false;
+            // model fix
+            $this->{$name} = $value;
         }
     }
 
