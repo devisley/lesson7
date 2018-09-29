@@ -9,7 +9,7 @@ use PHPUnit\Framework\TestCase;
 
 class PageTest extends TestCase {
 
-    function setUp() {
+    public static function setUpBeforeClass() {
         define('ENV', 'frontend');
 
         $config = array_merge(

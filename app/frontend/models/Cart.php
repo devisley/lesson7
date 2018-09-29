@@ -79,4 +79,16 @@ class Cart extends ActiveRecord
         unset($_SESSION['cart']);
     }
 
+
+    public static function getProduct($productId) {
+        foreach (static::getCart() as $product) {
+            if ($product['id'] == $productId) {
+                return $product;
+            }
+        }
+
+        return false;
+    }
+
+
 }

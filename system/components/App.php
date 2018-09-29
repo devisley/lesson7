@@ -51,17 +51,20 @@ class App extends BaseObject {
 
     /**
      * Start main loop
+     * @param bool $withRouting
      */
-    public function start() {
+    public function start($withRouting = true) {
         // connect to DB
         $this->connection = $this->getConnection();
         // get current request
         $this->request = new Request();
 
-        // initialize new router instance
-        $router = new Router($this->request->route);
-        // start routing
-        $router->route();
+        if ($withRouting) {
+            // initialize new router instance
+            $router = new Router($this->request->route);
+            // start routing
+            $router->route();
+        }
     }
 
     /**
@@ -76,7 +79,7 @@ class App extends BaseObject {
         $database = $settings['database'];
 
         try {
-            $dbh = new \PDO("mysql:host={$host};dbname={$database};port=3306", $user, $password);
+            $dbh = new \PDO("mysql:host={$host};dbname={$database}", $user, $password);
             return $dbh;
         } catch (\PDOException $error) {
             echo $error->getMessage();

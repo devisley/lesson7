@@ -1,0 +1,10 @@
+<phpunit>
+    <testsuites>
+        <testsuite name="geek-shop testsuite">
+        <!--<file>PageTest.php</file>-->
+        <file>FormatterTest.php</file>
+        <file>CartTest.php</file>
+        <!--<file>OrderTest.php</file>-->
+        </testsuite>
+    </testsuites>
+</phpunit>

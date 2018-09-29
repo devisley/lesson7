@@ -60,6 +60,7 @@ abstract class ActiveRecord extends Model {
             }
         }
 
+
         // prepare database statement
         $query = $db->prepare($queryString);
 
@@ -112,7 +113,7 @@ abstract class ActiveRecord extends Model {
         $sth = static::find($params);
         // set to class converting
         $sth->setFetchMode(PDO::FETCH_CLASS, static::class);
-
+        var_dump($sth);
         // fetch as class object
         $model = $sth->fetch();
         return $model;

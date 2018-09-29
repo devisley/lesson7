@@ -16,7 +16,6 @@ class Order extends ActiveRecord
 {
     public function __construct(array $attributes = [])
     {
-//        $this->created_at = time();
         $this->created_at = '2018-09-05 00:00:00';
         $this->comment = 'user comment';
         $this->order_status_id = 1;

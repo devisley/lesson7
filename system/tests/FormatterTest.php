@@ -1,5 +1,8 @@
 <?php
 
+//require ROOT . '/vendor/autoload.php';
+//require ROOT . '/system/bootstrap.php';
+
 require '../../vendor/autoload.php';
 require '../bootstrap.php';
 
@@ -9,9 +12,10 @@ use PHPUnit\Framework\TestCase;
 class FormatterTest extends TestCase {
 
     public function testFromRoute() {
-        // Test*Name -> Testname
-        // test-name -> TestName
-        $this->assertEquals('Testname', Formatter::fromRoute('Test*Name')); // fail
         $this->assertEquals('TestName', Formatter::fromRoute('test-name')); // success
+    }
+
+    public function testOneMore() {
+        $this->assertEquals('Testname', Formatter::fromRoute('Test*Name')); // fail
     }
 }

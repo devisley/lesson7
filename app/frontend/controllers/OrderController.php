@@ -15,6 +15,7 @@ use app\frontend\models\Cart;
 class OrderController extends Controller
 {
     public function actionCreate() {
+
         $order = new Order();
         $result = '';
 

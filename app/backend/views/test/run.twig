@@ -1,0 +1,8 @@
+<h1>Test results</h1>
+{% if testData %}
+    <ul>
+        {% for testObj in testData %}
+            <li class="{% if testObj.testOk  %} green {% else %} red {% endif %}">{{ testObj.message | raw}}</li>
+        {% endfor %}
+    </ul>
+{% endif %}

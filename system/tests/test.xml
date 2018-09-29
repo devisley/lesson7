@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="FormatterTest" file="/Users/manchenkov/Develop/framework/system/tests/FormatterTest.php" tests="1" assertions="1" errors="0" failures="1" skipped="0" time="0.049936">
-    <testcase name="testFromRoute" class="FormatterTest" classname="FormatterTest" file="/Users/manchenkov/Develop/framework/system/tests/FormatterTest.php" line="11" assertions="1" time="0.049936">
-      <failure type="PHPUnit\Framework\ExpectationFailedException">FormatterTest::testFromRoute
+  <testsuite name="geek-shop testsuite" tests="5" assertions="5" errors="0" failures="1" skipped="0" time="0.017520">
+    <testsuite name="FormatterTest" file="C:\OpenServer\OSPanel\domains\geek_shop-master\system\tests\FormatterTest.php" tests="2" assertions="2" errors="0" failures="1" skipped="0" time="0.014491">
+      <testcase name="testFromRoute" class="FormatterTest" classname="FormatterTest" file="C:\OpenServer\OSPanel\domains\geek_shop-master\system\tests\FormatterTest.php" line="14" assertions="1" time="0.012126"/>
+      <testcase name="testOneMore" class="FormatterTest" classname="FormatterTest" file="C:\OpenServer\OSPanel\domains\geek_shop-master\system\tests\FormatterTest.php" line="18" assertions="1" time="0.002365">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">FormatterTest::testOneMore
 Failed asserting that two strings are equal.
 --- Expected
 +++ Actual
@@ -10,8 +12,30 @@ Failed asserting that two strings are equal.
 -'Testname'
 +'Test*Name'
 
-/Users/manchenkov/Develop/framework/system/tests/FormatterTest.php:14
+C:\OpenServer\OSPanel\domains\geek_shop-master\system\tests\FormatterTest.php:19
 </failure>
-    </testcase>
+      </testcase>
+    </testsuite>
+    <testsuite name="CartTest" file="C:\OpenServer\OSPanel\domains\geek_shop-master\system\tests\CartTest.php" tests="3" assertions="3" errors="0" failures="0" skipped="0" time="0.003029">
+      <testcase name="testGetCart" class="CartTest" classname="CartTest" file="C:\OpenServer\OSPanel\domains\geek_shop-master\system\tests\CartTest.php" line="28" assertions="1" time="0.002021"/>
+      <testcase name="testAddProductToCart" class="CartTest" classname="CartTest" file="C:\OpenServer\OSPanel\domains\geek_shop-master\system\tests\CartTest.php" line="34" assertions="1" time="0.000478">
+        <system-out>object(PDOStatement)#330 (1) {
+  ["queryString"]=&gt;
+  string(41) "select * from `shop_product` where id=:id"
+}
+</system-out>
+      </testcase>
+      <testcase name="testCalculateCartPrice" class="CartTest" classname="CartTest" file="C:\OpenServer\OSPanel\domains\geek_shop-master\system\tests\CartTest.php" line="41" assertions="1" time="0.000530">
+        <system-out>object(PDOStatement)#329 (1) {
+  ["queryString"]=&gt;
+  string(41) "select * from `shop_product` where id=:id"
+}
+object(PDOStatement)#330 (1) {
+  ["queryString"]=&gt;
+  string(41) "select * from `shop_product` where id=:id"
+}
+</system-out>
+      </testcase>
+    </testsuite>
   </testsuite>
 </testsuites>

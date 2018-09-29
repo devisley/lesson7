@@ -43,3 +43,11 @@ html, body {
 .btn-link:hover {
     text-decoration: none;background-color: lime; color: #000;
 }
+
+.green {
+    color: forestgreen;
+}
+
+.red {
+    color: red;
+}
